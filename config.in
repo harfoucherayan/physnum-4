@@ -1,0 +1,27 @@
+% Parametres physiques :
+tfin =  9400753.64319           % 9395621.2017           %9400753.64319  % temps total maximal de simulation [s]  entre 109 et 110 jours 
+mass1 = 1.989e30  % mass de la particule test [kg]
+mass2 = 685   
+mass3 = 1.0e-30
+
+x1 =  0.0      
+y1 =  0.0	   
+x2 =  13.464378e9
+y2 =  0
+x3 =  0.00000001
+y3 =  0
+
+v1x = 0.0
+v1y = 0.0
+v2x = 0.0
+v2y = 133152.72017636
+v3x = 0.0
+v3y = 0.0
+
+% Parametres numeriques :
+nsteps   = 100000     % nombre de pas de temps maximal (dt=tfin/nsteps)
+schema   = TA         % Schema numerique RK4, TA
+tol      = 1.0e-3
+maxit    = 10000    % nombre maximale d iterations methode implicite
+output   = output.out % nome/adresse du fichier d'output
+sampling = 1          % nombre de pas de temps entre deux ecritures, no sampling = -1
